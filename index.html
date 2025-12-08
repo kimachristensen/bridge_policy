@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Vision-language bridge policy for autonomous surface vessels.">
+        content="Foundation models on the bridge: semantic hazard detection and safety maneuvers for maritime autonomy with vision-language models.">
   <meta name="keywords"
-        content="Autonomous Surface Vessels, Maritime Autonomy, Bridge Policy, Vision-Language Models">
+        content="Autonomous Surface Vessels, Maritime Autonomy, Bridge Policy, Vision-Language Models, Semantic Hazard Detection">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bridge Policy for Autonomous Surface Vessels</title>
+  <title>Foundation models on the bridge: Semantic hazard detection and safety maneuvers for maritime autonomy with vision-language models</title>
 
   <!-- Fonts and CSS -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <!-- Bulma + icons via CDN (simpler than local copies) -->
+  <!-- Bulma + icons via CDN -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet"
@@ -35,43 +35,72 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <!-- TODO: replace with exact paper title if different -->
+
           <h1 class="title is-1 publication-title">
-            Bridge Policy for Autonomous Surface Vessels
+            Foundation models on the bridge: Semantic hazard detection and safety maneuvers
+            for maritime autonomy with vision-language models
           </h1>
 
           <div class="is-size-5 publication-authors">
-            <!-- TODO: adjust authors/links/superscripts -->
             <span class="author-block">
-              <a href="https://kimchristensen.github.io">Kim A. Christensen</a><sup>1</sup>,
+              Kim Alexander Christensen<sup>1,*</sup>,
             </span>
             <span class="author-block">
-              <a href="#">Co-author 1</a><sup>1</sup>,
+              Andreas Gudahl Tufte<sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="#">Co-author 2</a><sup>2</sup>
+              Alexey Gusev<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Rohan Sinha<sup>4</sup>,
+            </span>
+            <span class="author-block">
+              Milan Ganai<sup>5</sup>,
+            </span>
+            <span class="author-block">
+              Ole Andreas Alsos<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Marco Pavone<sup>4,6</sup>,
+            </span>
+            <span class="author-block">
+              Martin Steinert<sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Norwegian University of Science and Technology (NTNU),</span>
-            <span class="author-block"><sup>2</sup>Affiliation 2</span>
+            <span class="author-block">
+              <sup>1</sup>Dept. of Mechanical and Industrial Engineering, NTNU, Norway
+            </span><br>
+            <span class="author-block">
+              <sup>2</sup>Dept. of Engineering Cybernetics, NTNU, Norway
+            </span><br>
+            <span class="author-block">
+              <sup>3</sup>Dept. of Design, NTNU, Norway
+            </span><br>
+            <span class="author-block">
+              <sup>4</sup>Dept. of Aeronautics and Astronautics, Stanford University, USA
+            </span><br>
+            <span class="author-block">
+              <sup>5</sup>Dept. of Computer Science, Stanford University, USA
+            </span><br>
+            <span class="author-block">
+              <sup>6</sup>NVIDIA Research, USA
+            </span>
           </div>
 
-          <!-- e.g. “Under review at …” or similar -->
-          <div class="is-size-5 publication-authors"
-               style="color: red; margin-top: 10px;">
+          <div class="is-size-6" style="margin-top: 0.5rem;">
             <span class="author-block">
-              <b><u>Preprint</u></b> – coming soon
+              * Corresponding author: <a href="mailto:kimac@stud.ntnu.no">kimac@stud.ntnu.no</a>
             </span>
           </div>
 
           <!-- Buttons: arXiv, code, video -->
-          <div class="column has-text-centered">
+          <div class="column has-text-centered" style="margin-top: 1.5rem;">
             <div class="publication-links">
-              <!-- arXiv -->
+
+              <!-- arXiv (placeholder for now) -->
               <span class="link-block">
-                <!-- TODO: replace # with arXiv URL when available -->
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -83,7 +112,6 @@
 
               <!-- Code -->
               <span class="link-block">
-                <!-- TODO: replace with actual repo if different -->
                 <a href="https://github.com/kimchristensen/bridge_policy"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -95,8 +123,7 @@
 
               <!-- Video -->
               <span class="link-block">
-                <!-- TODO: replace # with YouTube URL -->
-                <a href="#"
+                <a href="https://youtu.be/TxLVjCTumiw"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-youtube"></i>
@@ -117,6 +144,7 @@
                 </a>
               </span>
               -->
+
             </div>
           </div>
 
@@ -131,17 +159,16 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <p style="text-align:center;">
-        <!-- TODO: add your own overview image at static/images/overview_bridge_policy.png -->
         <img style="width: 90%; height: auto;"
-             src="static/images/overview_bridge_policy.png"
-             alt="Overview of the Bridge Policy framework"
+             src="static/images/01_overview.png"
+             alt="Overview of the Semantic Lookout bridge policy framework"
              class="img-responsive" />
       </p>
       <h2 class="subtitle has-text-centered">
-        <!-- Short one-sentence description -->
-        A <span class="dnerf">Bridge Policy</span> maps raw, open-world observations
-        (e.g., camera views) into semantically meaningful actions and constraints
-        for autonomous surface vessels, enabling robust behavior in unusual situations.
+        <span class="dnerf">Semantic Lookout</span> is a camera-only, candidate-constrained
+        vision–language model bridge that selects cautious short-horizon actions or
+        station-keeping under continuous human authority, to keep autonomous and remotely
+        supervised vessels safe in out-of-distribution situations.
       </h2>
     </div>
   </div>
@@ -156,23 +183,45 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: paste your actual abstract -->
           <p>
-            [Paste the full abstract of your paper here.]
+            The draft IMO MASS Code requires autonomous and remotely supervised maritime vessels
+            to detect departures from their operational design domain, enter a predefined fallback
+            that notifies the operator, permit immediate human override, and avoid changing the
+            voyage plan without approval. Meeting these obligations in the alert-to-takeover gap
+            calls for a short-horizon, human-overridable safe-keeping policy. Classical maritime
+            autonomy stacks struggle when the correct action depends on meaning (e.g., a diver-down
+            flag means people in the water, fire close by means hazard). We argue (i) that
+            vision–language models (VLMs) provide semantic awareness for such out-of-distribution
+            situations, and (ii) that a fast–slow anomaly pipeline with a short-horizon,
+            human-overridable fallback makes this practical in the handover window.
+          </p>
+          <p>
+            We introduce <i>Semantic Lookout</i>, a camera-only, candidate-constrained
+            vision–language model bridge that selects one cautious action (or station-keeping)
+            from water-valid, world-anchored trajectories under continuous human authority. On
+            40 harbor scenes we measure per-call scene understanding and latency, alignment with
+            human consensus (model majority-of-three voting), short-horizon risk-relief on fire
+            hazard scenes, and an on-water alert→bridge→operator handover. Sub-10&nbsp;s models
+            retain most of the awareness of slower state-of-the-art models. The bridge policy
+            outperforms geometry-only baselines and increases standoff distance on fire scenes.
+            A field run verifies end-to-end operation. These results support VLMs as a semantic
+            fallback “bridge policy” compatible with the draft IMO MASS Code, within practical
+            latency budgets, and motivate future work on domain-adapted, hybrid autonomy that
+            pairs foundation-model semantics with multi-sensor bird’s-eye-view perception and
+            short-horizon replanning.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Main video (single big embed) -->
+    <!-- Main video -->
     <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <!-- TODO: replace VIDEO_ID with your YouTube video ID -->
           <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID?rel=0&amp;showinfo=0"
-            title="Bridge Policy video"
+            src="https://www.youtube.com/embed/TxLVjCTumiw?rel=0&amp;showinfo=0"
+            title="Semantic Lookout / Bridge Policy video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
@@ -188,20 +237,25 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-
       <div class="column is-full-width">
         <h2 class="title is-3">Method Overview</h2>
         <div class="content has-text-justified">
-          <!-- TODO: replace with a concise summary -->
           <p>
-            Here you can briefly describe how the bridge policy works in 1–3 paragraphs:
-            the inputs (e.g., vision-language model outputs, environment state),
-            the internal representation (semantic categories, risk scores, fallback rules),
-            and the outputs (constraints, goals, or actions passed to a low-level planner).
+            Semantic Lookout acts as a semantic “bridge policy” between rapid anomaly detection
+            and human takeover. A fast anomaly detector monitors a monocular camera stream for
+            departures from the vessel’s operational design domain. When an alert triggers,
+            a slower but semantically rich VLM reasons over the current scene and a discrete
+            set of water-valid, dynamics-feasible candidate trajectories.
+          </p>
+          <p>
+            The bridge policy assigns semantic risk to candidates (e.g., proximity to fire,
+            people in the water, or other hazards) and selects a cautious short-horizon action
+            or station-keeping maneuver. The operator remains in the loop and can override or
+            approve behavior at any time, ensuring compatibility with the draft IMO MASS Code’s
+            requirements on fallback behavior, human authority, and voyage plan changes.
           </p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -210,10 +264,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{christensen2025bridgepolicy,
-  author  = {Christensen, Kim A. and &lt;co-authors&gt;},
-  title   = {Bridge Policy for Autonomous Surface Vessels},
-  journal = {&lt;venue&gt;},
+    <pre><code>@article{christensen2025foundationbridge,
+  author  = {Christensen, Kim Alexander and Tufte, Andreas Gudahl and Gusev, Alexey and
+             Sinha, Rohan and Ganai, Milan and Alsos, Ole Andreas and Pavone, Marco and
+             Steinert, Martin},
+  title   = {Foundation models on the bridge: Semantic hazard detection and safety maneuvers
+             for maritime autonomy with vision-language models},
+  journal = {Ocean Engineering (submitted)},
   year    = {2025}
 }</code></pre>
   </div>
