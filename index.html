@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Vision-language bridge policy for autonomous surface vessels.">
+  <meta name="keywords"
+        content="Autonomous Surface Vessels, Maritime Autonomy, Bridge Policy, Vision-Language Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bridge Policy for Autonomous Surface Vessels</title>
+
+  <!-- Fonts and CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <!-- Bulma + icons via CDN (simpler than local copies) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- Local overrides -->
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <!-- Optional favicon -->
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+</head>
+<body>
+
+<!-- TITLE + AUTHORS -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- TODO: replace with exact paper title if different -->
+          <h1 class="title is-1 publication-title">
+            Bridge Policy for Autonomous Surface Vessels
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <!-- TODO: adjust authors/links/superscripts -->
+            <span class="author-block">
+              <a href="https://kimchristensen.github.io">Kim A. Christensen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Co-author 1</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Co-author 2</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Norwegian University of Science and Technology (NTNU),</span>
+            <span class="author-block"><sup>2</sup>Affiliation 2</span>
+          </div>
+
+          <!-- e.g. “Under review at …” or similar -->
+          <div class="is-size-5 publication-authors"
+               style="color: red; margin-top: 10px;">
+            <span class="author-block">
+              <b><u>Preprint</u></b> – coming soon
+            </span>
+          </div>
+
+          <!-- Buttons: arXiv, code, video -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv -->
+              <span class="link-block">
+                <!-- TODO: replace # with arXiv URL when available -->
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- Code -->
+              <span class="link-block">
+                <!-- TODO: replace with actual repo if different -->
+                <a href="https://github.com/kimchristensen/bridge_policy"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <!-- Video -->
+              <span class="link-block">
+                <!-- TODO: replace # with YouTube URL -->
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Optional: PDF hosted directly -->
+              <!--
+              <span class="link-block">
+                <a href="./static/bridge_policy.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW IMAGE -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <p style="text-align:center;">
+        <!-- TODO: add your own overview image at static/images/overview_bridge_policy.png -->
+        <img style="width: 90%; height: auto;"
+             src="static/images/overview_bridge_policy.png"
+             alt="Overview of the Bridge Policy framework"
+             class="img-responsive" />
+      </p>
+      <h2 class="subtitle has-text-centered">
+        <!-- Short one-sentence description -->
+        A <span class="dnerf">Bridge Policy</span> maps raw, open-world observations
+        (e.g., camera views) into semantically meaningful actions and constraints
+        for autonomous surface vessels, enabling robust behavior in unusual situations.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- ABSTRACT + BIG VIDEO -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: paste your actual abstract -->
+          <p>
+            [Paste the full abstract of your paper here.]
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main video (single big embed) -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- TODO: replace VIDEO_ID with your YouTube video ID -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID?rel=0&amp;showinfo=0"
+            title="Bridge Policy video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OPTIONAL: SHORT “Method Overview” SECTION -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: replace with a concise summary -->
+          <p>
+            Here you can briefly describe how the bridge policy works in 1–3 paragraphs:
+            the inputs (e.g., vision-language model outputs, environment state),
+            the internal representation (semantic categories, risk scores, fallback rules),
+            and the outputs (constraints, goals, or actions passed to a low-level planner).
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BIBTEX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{christensen2025bridgepolicy,
+  author  = {Christensen, Kim A. and &lt;co-authors&gt;},
+  title   = {Bridge Policy for Autonomous Surface Vessels},
+  journal = {&lt;venue&gt;},
+  year    = {2025}
+}</code></pre>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is based on the template from
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+            and simplified in the style of the
+            <a href="https://milanganai.github.io/fortress/">FORTRESS</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
