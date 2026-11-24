@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="description"
@@ -13,13 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <!-- Bulma + icons via CDN -->
+  <!-- Bulma via CDN -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <!-- Local overrides -->
   <link rel="stylesheet" href="./static/css/index.css">
@@ -30,141 +26,96 @@
 <body>
 
 <!-- TITLE + AUTHORS -->
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
+<header class="publication-header has-text-centered">
+  <div class="publication-wide">
+    <h1 class="title publication-title">
+      Foundation models on the bridge: Semantic hazard detection and safety maneuvers
+      for maritime autonomy with vision-language models
+    </h1>
 
-          <h1 class="title is-1 publication-title">
-            Foundation models on the bridge: Semantic hazard detection and safety maneuvers
-            for maritime autonomy with vision-language models
-          </h1>
+    <div class="publication-authors">
+      <span class="author-block">
+        <a href="https://kimachristensen.github.io/">Kim Alexander Christensen</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://www.ntnu.no/ansatte/andreas.tufte">Andreas Gudahl Tufte</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://www.ntnu.edu/employees/alexey.gusev">Alexey Gusev</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://rohansinha.nl/">Rohan Sinha</a><sup>2</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://milanganai.github.io/">Milan Ganai</a><sup>2</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://www.ntnu.no/ansatte/oleanda">Ole Andreas Alsos</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://profiles.stanford.edu/marco-pavone">Marco Pavone</a><sup>2,3</sup>,
+      </span>
+      <span class="author-block">
+        <a href="https://www.ntnu.edu/employees/martin.steinert">Martin Steinert</a><sup>1</sup>
+      </span>
+    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://kimachristensen.github.io/">Kim Alexander Christensen</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.ntnu.no/ansatte/andreas.tufte">Andreas Gudahl Tufte</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.ntnu.edu/employees/alexey.gusev">Alexey Gusev</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://rohansinha.nl/">Rohan Sinha</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://milanganai.github.io/">Milan Ganai</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.ntnu.edu/employees/oleanda">Ole Andreas Alsos</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://profiles.stanford.edu/marco-pavone">Marco Pavone</a><sup>2,3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.ntnu.edu/employees/martin.steinert">Martin Steinert</a><sup>1</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <sup>1</sup>Norwegian University of Science and Technology
-            </span><br>
-            <span class="author-block">
-              <sup>2</sup>Stanford University
-            <span class="author-block">
-              <sup>3</sup>NVIDIA Research
-            </span>
-          </div>
-
-          <!-- Buttons: arXiv, code, video -->
-          <div class="column has-text-centered" style="margin-top: 1.5rem;">
-            <div class="publication-links">
-
-              <!-- arXiv (placeholder for now) -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
-              <!-- Code -->
-              <span class="link-block">
-                <a href="https://github.com/kimachristensen/bridge_policy"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
-
-              <!-- Video -->
-              <span class="link-block">
-                <a href="https://youtu.be/TxLVjCTumiw"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-
-              <!-- Optional: PDF hosted directly -->
-              <!--
-              <span class="link-block">
-                <a href="./static/bridge_policy.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              -->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <div class="publication-affiliations">
+      <span class="author-block">
+        <sup>1</sup> Norwegian University of Science and Technology
+      </span>
+      <span class="author-block"><sup>2</sup> Stanford University</span>
+      <span class="author-block"><sup>3</sup> NVIDIA Research</span>
     </div>
   </div>
-</section>
+</header>
 
-<!-- OVERVIEW IMAGE -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <p style="text-align:center;">
-        <img style="width: 90%; height: auto;"
-             src="static/images/01_overview.png"
-             alt="Overview of the Semantic Lookout bridge policy framework"
-             class="img-responsive" />
-      </p>
-      <h2 class="subtitle has-text-centered">
+<!-- OVERVIEW AND PAPER LINKS -->
+<section class="teaser" aria-label="Project overview">
+  <div class="publication-wide">
+    <figure class="publication-figure">
+      <div class="publication-media">
+        <a class="publication-figure-link" href="static/images/01_overview.png"
+           aria-label="Enlarge the Semantic Lookout overview figure">
+          <img src="static/images/01_overview.png" width="968" height="674"
+               alt="Overview of the Semantic Lookout bridge policy framework">
+        </a>
+        <iframe class="publication-video"
+                src="https://www.youtube.com/embed/TxLVjCTumiw?rel=0"
+                title="Semantic Lookout / Bridge Policy video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+      <figcaption class="has-text-centered">
         <span class="dnerf">Semantic Lookout</span> is a camera-only, candidate-constrained
         vision–language model bridge that selects cautious short-horizon actions or
         station-keeping under continuous human authority, to keep autonomous and remotely
         supervised vessels safe in out-of-distribution situations.
-      </h2>
-    </div>
+      </figcaption>
+    </figure>
+    <p class="publication-links has-text-centered">
+      Published in <a href="https://www.sciencedirect.com/science/article/pii/S0029801826004804">Ocean Engineering</a>
+      <span class="is-inline-block">(<a href="https://arxiv.org/abs/2512.24470">arXiv preprint</a>)</span>
+    </p>
   </div>
 </section>
 
-<!-- ABSTRACT + BIG VIDEO -->
+<dialog class="figure-dialog" id="overview-figure-dialog" aria-label="Semantic Lookout overview figure"
+        closedby="any">
+  <form method="dialog">
+    <button type="submit" class="button is-small" autofocus>Close</button>
+  </form>
+  <div class="figure-dialog-image" role="region" aria-label="Full-size figure" tabindex="0">
+    <img src="static/images/01_overview.png" width="968" height="674"
+         alt="Overview of the Semantic Lookout bridge policy framework">
+  </div>
+</dialog>
+
+<!-- ABSTRACT -->
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column publication-abstract">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
@@ -194,23 +145,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Main video -->
-    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe
-            src="https://www.youtube.com/embed/TxLVjCTumiw?rel=0&amp;showinfo=0"
-            title="Semantic Lookout / Bridge Policy video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -218,14 +152,18 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{christensen2025foundationbridge,
-  author  = {Christensen, Kim Alexander and Tufte, Andreas Gudahl and Gusev, Alexey and
-             Sinha, Rohan and Ganai, Milan and Alsos, Ole Andreas and Pavone, Marco and
-             Steinert, Martin},
-  title   = {Foundation models on the bridge: Semantic hazard detection and safety maneuvers
-             for maritime autonomy with vision-language models},
-  journal = {Ocean Engineering (submitted)},
-  year    = {2025}
+    <pre><code>@article{christensen2026foundation,
+  author    = {Christensen, Kim Alexander and Tufte, Andreas Gudahl and Gusev, Alexey and
+               Sinha, Rohan and Ganai, Milan and Alsos, Ole Andreas and Pavone, Marco and
+               Steinert, Martin},
+  title     = {Foundation models on the bridge: Semantic hazard detection and safety maneuvers
+               for maritime autonomy with vision-language models},
+  journal   = {Ocean Engineering},
+  volume    = {359},
+  pages     = {124646},
+  year      = {2026},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.oceaneng.2026.124646}
 }</code></pre>
   </div>
 </section>
@@ -245,6 +183,22 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const figureLink = document.querySelector('.publication-figure-link');
+  const figureDialog = document.getElementById('overview-figure-dialog');
+
+  if (typeof figureDialog.showModal === 'function') {
+    figureLink.setAttribute('aria-haspopup', 'dialog');
+    figureLink.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+        return;
+      }
+      event.preventDefault();
+      figureDialog.showModal();
+    });
+  }
+</script>
 
 </body>
 </html>

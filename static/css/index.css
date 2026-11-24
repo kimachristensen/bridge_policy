@@ -2,34 +2,41 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* Buttons under the title */
-.link-block a {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-/* Fun small-caps style if you use <span class="dnerf"> */
 .dnerf {
   font-variant: small-caps;
 }
 
-/* Overview / teaser section */
-.teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
+.publication-wide {
+  max-width: 75rem;
+  margin-inline: auto;
 }
 
+.publication-header,
 .teaser {
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+.publication-header {
+  padding-block: clamp(1.5rem, 4vw, 2.5rem) 1.5rem;
   font-family: 'Google Sans', sans-serif;
 }
 
-/* Publication header typography */
-.publication-title {
-  font-family: 'Google Sans', sans-serif;
+.title.publication-title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.375rem);
+  text-wrap: balance;
 }
 
 .publication-authors {
-  font-family: 'Google Sans', sans-serif;
+  font-size: 1.0625rem;
+}
+
+.publication-affiliations {
+  margin-top: 0.25rem;
+}
+
+.publication-affiliations .author-block {
+  margin-inline: 0.35rem;
 }
 
 .publication-authors a {
@@ -44,32 +51,93 @@ body {
   display: inline-block;
 }
 
-/* Video embed container */
+.publication-figure {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.publication-media {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.publication-figure-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.publication-figure-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publication-figure figcaption {
+  margin-top: 1rem;
+}
+
 .publication-video {
-  position: relative;
+  display: block;
   width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 */
-  overflow: hidden;
-  border-radius: 10px !important;
+  height: auto;
+  min-height: 200px;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
 }
 
-.publication-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.publication-links {
+  margin-top: 1rem;
 }
 
-/* Make width similar to Nerfies / Fortress */
+.publication-links a {
+  text-decoration: underline;
+}
+
+.figure-dialog {
+  max-width: calc(100% - 2rem);
+  max-height: calc(100% - 2rem);
+  margin: auto;
+  padding: 0.75rem;
+  border: 0;
+  border-radius: 0.625rem;
+}
+
+.figure-dialog::backdrop {
+  background: rgb(0 0 0 / 65%);
+}
+
+.figure-dialog form {
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.figure-dialog-image {
+  max-height: calc(100dvh - 6rem);
+  overflow: auto;
+}
+
+.figure-dialog-image img {
+  display: block;
+  max-width: none;
+}
+
+@media (min-width: 72rem) {
+  .publication-figure {
+    max-width: none;
+  }
+
+  .publication-media {
+    /* Match the heights of the 968:674 figure and the 16:9 video. */
+    grid-template-columns: minmax(0, 1.436fr) minmax(0, 1.778fr);
+    align-items: start;
+  }
+}
+
+.publication-abstract {
+  max-width: 54rem;
+}
+
 .container.is-max-desktop {
   max-width: 960px;
-}
-
-/* Basic responsive tweak */
-@media (max-width: 768px) {
-  .hero .title {
-    font-size: 1.8rem;
-  }
 }
